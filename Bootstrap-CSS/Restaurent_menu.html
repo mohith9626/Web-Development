@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mohith's Indian Bistro</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/restaurent_menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+<!-- <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'> -->
+  </head>
+<body>
+    
+  <header>
+    <nav id="header-nav" class="navbar navbar-expand-lg"> <!-- fixed-top can be used to fixed the nav-bar at the top-->
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a href="Restaurent_menu.html" class="float-start d-md-block d-none d-lg-block d-xl-block">
+              <div id="logo-img"></div>
+            </a>
+          
+          <div class="navbar-brand">
+            <a href="Restaurent_menu.html"><h1>Mohith's Restaurent</h1></a>
+            <p>
+              <img id ="brand-img" src="images/8.jpg" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </p>
+        </div>
+    </div>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsable-nav">
+      <ul id="nav-list" class="navbar-nav float-lg-end justify-content-sm-center justify-content-center">
+        <hr class="d-none d-sm-block">
+        <li class="nav-item">
+          <a class="nav-link active" href="menu-categories.html">
+            <span class="fa fa-cutlery"></span><br class="d-none d-sm-block"> <h4>Menu</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="bi-info-circle"><br class="d-none d-sm-block"> <h4>About</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="bi-award-fill"></span><br class="d-none d-sm-block"><h4>Awards</h4></a>
+        </li>      
+
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><br class=".d-none .d-sm-block"> 
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+
+      </ul>
+    </div>
+
+</div>  
+</nav>
+</header>
+<div id='main-content' class="container">
+  <h1 class="text-center" id="body-menu">Menu</h1>
+  <div class="body-image">
+    <img src="images/nature.jpg" alt="Picture" class="img-fluid d-sm-block d-lg-none d-md-none">
+  </div>
+  <div id="home-tiles" class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+      <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+      <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      <a href="https://maps.app.goo.gl/us1Gu5MiSgenPwDB9" target="_blank">
+        <div id="map-tile">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987643.5021528461!2d-151.9372087851001!3d61.087166772915175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8917604b33f41%3A0x257dba5aa78468e3!2sAnchorage%2C%20AK!5e0!3m2!1sen!2sus!4v1700235035958!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+          <span>map</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer class="body-footer">
+  <div class="container">
+    <div class="row">
+      <div id="hours" class="col-sm-4">
+        <span>Hours:</span><br>
+        Sun-Thurs: 11:15am - 10:00pm<br>
+        Fri: 11:15am - 2:30pm<br>
+        Saturday Closed
+        <hr class="d-lg-none d-md-none">
+      </div>
+      <div id="address" class="col-sm-4">
+        <span>Address:</span><br>
+        7105 Reisterstown Road<br>
+        Baltimore, MD 21215
+        <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+        <hr class="d-lg-none d-md-none">
+      </div>
+      <div id="testimonials" class="col-sm-4">
+        <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+        <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+      </div>
+    </div>
+    <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+  </div>
+</footer>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <!-- <script src="bootstrap-5.3.2-dist/js/script.js"></script> -->
+</body>
+</html>
