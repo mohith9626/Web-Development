@@ -1,0 +1,340 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+    overflow: auto;
+  }
+  
+  /** HEADER **/
+  #header-nav {
+    background-color: #6ebed4;
+    border-radius: 0;
+    border: 0;
+    height: 150px;
+  }
+
+  #logo-img {
+    background: url('../images/7.jpg') no-repeat;
+    background-size: 100% 100%; 
+    width: 120px;
+    height: 120px;
+    margin: 10px 15px 10px 0;
+  }
+  #brand-img { 
+    max-width: 50px; 
+    max-height: 50px; 
+}
+  .navbar-brand {
+    padding-top: 25px;
+  }
+  
+  .navbar-brand h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus, .navbar-brand a:link {
+    text-decoration: none;
+  }
+  .navbar-brand p { /* Kosher cert */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  .navbar-brand p span { /* Star-K */
+    vertical-align: middle;
+  }
+
+  #nav-list {
+  background-color: #6ebed4;
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#nav-list a:hover,#nav-list .active {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggler {
+  clear: both;
+  margin-top: -30px;
+}
+.fa-cutlery
+{
+  margin: 5px;
+}
+@media (min-width: 992px)
+{
+.navbar-expand-lg .navbar-collapse {
+    display: block!important;
+    flex-basis: auto;
+}
+}
+/*.navbar-collapse {
+  flex-basis: 60%;
+  flex-grow: 0;
+}*/
+
+/* ----------------------------------- END HEADER ----------------------------------------- */
+
+
+/*----------------------------------- Main page body ------------------------------------ */
+.container .body-image {
+  box-shadow: 0 0 50px black;
+  border: 2px solid black;
+}
+hr{
+  color: black;
+}
+#body-menu
+{
+  color:#6ebed4;
+  font-family: 'Lora', serif;
+}
+/*.main-class
+{
+  background: url('nature.jpg') no-repeat;
+}*/
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url('../images/nature1.jpg') no-repeat;
+  background-size: 100% 100%; 
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/nature2.jpg') no-repeat;
+  background-size: 100% 100%; 
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Makes the span width not just for the written content but the width of the container/div of it's parent */
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #6ebed4;
+  opacity: .8;
+}
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+  .container .body-image { 
+    background: url('../images/nature.jpg');
+    background-size: 100% 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container .body-image {
+    background: url('../images/nature.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+/* Home Page */
+.container .body-image  {
+  background: url('../images/nature.jpg') no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+}
+/********** small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Home Page */
+  .container .body-image  {
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  }
+
+/********** small devices only **********/
+@media (max-width: 576px) {
+  /* Home Page */
+  .container .body-image  {
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  }
+
+/* --------------------------------------------- End Home Page ------------------------------------*/
+/* --------------------------------------------- FOOTER -------------------------------------------*/
+.body-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.body-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/*---------------------------------------------- Footer -------------------------------------------*/
+
+/*----------------------------------------------- Menu Categories ---------------------------------*/
+.category-tile { 
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px auto;
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #6ebed4;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+/*----------------------------------------------- Menu Categories ---------------------------------*/
+
+/*----------------------------------------------- single Categories ---------------------------------*/
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+
+/*----------------------------------------------- single Categories ---------------------------------*/
