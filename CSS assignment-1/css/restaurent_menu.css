@@ -1,0 +1,249 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+    overflow: auto;
+  }
+  
+  /** HEADER **/
+  #header-nav {
+    background-color: #6ebed4;
+    border-radius: 0;
+    border: 0;
+    height: 150px;
+  }
+
+  #logo-img {
+    background: url('../images/7.jpg') no-repeat;
+    background-size: 100% 100%; 
+    width: 120px;
+    height: 120px;
+    margin: 10px 15px 10px 0;
+  }
+  #brand-img { 
+    max-width: 50px; 
+    max-height: 50px; 
+}
+  .navbar-brand {
+    padding-top: 25px;
+  }
+  
+  .navbar-brand h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus, .navbar-brand a:link {
+    text-decoration: none;
+  }
+  .navbar-brand p { /* Kosher cert */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  .navbar-brand p span { /* Star-K */
+    vertical-align: middle;
+  }
+
+  #nav-list {
+  background-color: #6ebed4;
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#nav-list a:hover,#nav-list .active {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggler {
+  clear: both;
+  margin-top: -30px;
+}
+.fa-cutlery
+{
+  margin: 5px;
+}
+@media (min-width: 992px)
+{
+.navbar-expand-lg .navbar-collapse {
+    display: block!important;
+    flex-basis: auto;
+}
+}
+/*.navbar-collapse {
+  flex-basis: 60%;
+  flex-grow: 0;
+}*/
+
+/* ----------------------------------- END HEADER ----------------------------------------- */
+
+
+/*----------------------------------- Main page body ------------------------------------ */
+.container .body-image {
+  box-shadow: 0 0 50px black;
+  border: 2px solid black;
+}
+hr{
+  color: black;
+}
+#body-menu
+{
+  color:#6ebed4;
+  font-family: 'Lora', serif;
+  font-size: 4em;
+}
+/*.main-class
+{
+  background: url('nature.jpg') no-repeat;
+}*/
+#chicken, #beef, #pork {
+  height: 700px;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+#chicken a:hover, #beef a:hover, #pork a:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#chicken{
+  background-color: antiquewhite;
+  color: black;
+}
+#pork{
+  background-color: rgb(91, 155, 90);
+  color: black;
+}
+#beef{
+  background-color: rgb(153, 130, 205);
+  color: black;
+}
+#home-tiles a {
+  text-decoration: none;
+  color: #6ebed4;
+  font-size: 1.6em;
+}
+
+#chicken span, #beef span, #pork span{
+  display:block;
+  width: 100%;
+  text-align: center;
+}
+
+#chicken div, #beef div, #pork div {
+  width: 100%; /* display block and width 100% Makes the span width not just for the written content but the width of the container/div of it's parent */
+  opacity: .8;
+}
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+  .container .body-image { 
+    background: url('../images/nature.jpg');
+    background-size: 100% 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container .body-image {
+    background: url('../images/nature.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+/* Home Page */
+.container .body-image  {
+  background: url('../images/nature.jpg') no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#nav-list {
+  background-color: black;
+}
+}
+/********** small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Home Page */
+  .container .body-image  {
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  #nav-list {
+    background-color: black;
+  }
+  }
+
+/********** small devices only **********/
+@media (max-width: 576px) {
+  /* Home Page */
+  .container .body-image  {
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  #nav-list {
+    background-color: black;
+  }
+  }
+
+/* --------------------------------------------- End Home Page ------------------------------------*/
+/* --------------------------------------------- FOOTER -------------------------------------------*/
+.body-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.body-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/*---------------------------------------------- Footer -------------------------------------------*/
+
