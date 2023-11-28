@@ -5,7 +5,9 @@ body {
     font-family: 'Oxygen', sans-serif;
     overflow: auto;
   }
-  
+  .navbar-collapse {
+    margin: -15px;
+  }
   /** HEADER **/
   #header-nav {
     background-color: #6ebed4;
@@ -150,6 +152,7 @@ hr{
   width: 100%; /* display block and width 100% Makes the span width not just for the written content but the width of the container/div of it's parent */
   opacity: .8;
 }
+
 
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
