@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded",
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", function () {
+        requestUrl = "data/name.txt"
         request = new XMLHttpRequest()
         request.onreadystatechange = function() { 
           handleResponse(request); 
