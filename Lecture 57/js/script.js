@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",
     document.querySelector("button")
       .addEventListener("click", function () {
         requestUrl = "data/name.txt";
-        request = new XMLHttpRequest()
+        request = new XMLHttpRequest();
         request.onreadystatechange = function() { 
           handleResponse(request); 
         };
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded",
 
               document.querySelector("#content").innerHTML = "<h2>Hello " + name + "!</h2>";
           }
-        }
+        };
       
       });
   }
