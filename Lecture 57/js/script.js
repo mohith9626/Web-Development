@@ -5,18 +5,22 @@ document.addEventListener("DOMContentLoaded",
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", function () {
-        
-        // Call server to get the name
-        $ajaxUtils
-          .sendGetRequest("data/name.txt", 
-            function (request) {
+        request = new XMLHttpRequest()
+        request.onreadystatechange = function() { 
+          handleResponse(request); 
+        };
+        request.open("GET", requestUrl, true);
+        request.send(null); // for POST only
+
+        function handleResponse(request) {
+          if ((request.readyState == 4) &&
+            (request.status == 200)) {
               var name = request.responseText;
 
-              document.querySelector("#content")
-                .innerHTML = "<h2>Hello " + name + "!</h2>";
-            });
-
-        
+              document.querySelector("#content").innerHTML = "<h2>Hello " + name + "!</h2>";
+          }
+        }
+      
       });
   }
 );
