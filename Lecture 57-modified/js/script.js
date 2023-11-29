@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",
         function handleResponse(request) {
           if ((request.readyState == 4) &&
             (request.status == 200)) {
-              var name = request;
+              var name = request.responseText;
 
               document.querySelector("#content").innerHTML = "<h2>Hello " + name + "!</h2>";
           }
