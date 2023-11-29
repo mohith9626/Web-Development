@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",
             (request.status == 200)) {
               res = JSON.parse(request.responseText);
               var message = 
-                res.firstName + " " + res.lastName
+                res.firstName + " " + res.lastName;
               if (res.likesChineseFood) {
                 message += " likes Chinese food";
               }
